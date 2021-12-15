@@ -5,11 +5,13 @@
         flex-wrap: wrap;
         margin: 0px;
         margin-bottom: 50px;
-        width: 450px;
-        margin-left: auto;
-        margin-right: auto;
+        width: 362px;
+        /*margin-left: auto;*/
+        
     }
-
+.container__button{
+    max-width: 450px;
+}
     .portfolio__list-button {
         display: flex;
 
@@ -61,6 +63,9 @@
     .portfolio__tittle-button {
         width: 100%;
         justify-content: center;
+    }
+    .container__button {
+        max-width:768px;
     }
 }
 
