@@ -977,8 +977,9 @@ h3 {
     max-width: 480px;
     padding: 0px;
     margin: 0px;
-    margin-left: auto;
-    margin-right: auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .customers__list {
     display: -webkit-box;
@@ -1017,6 +1018,13 @@ h3 {
   .customers__permanent:hover .customers__icon,
   .customers__permanent:focus .customers__icon {
     fill: var(--logo-first-color);
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .customers {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

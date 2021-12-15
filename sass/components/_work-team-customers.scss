@@ -170,8 +170,7 @@
         max-width: 480px;
         padding: 0px;
         margin: 0px;
-        margin-left: auto;
-        margin-right: auto;
+        justify-content: center;
     }
 
     .customers__list {
@@ -211,10 +210,16 @@
         fill: var(--logo-first-color);
     }
 }
-
+@media screen and (min-width:480px){
+.customers{
+margin-left: auto;
+margin-right: auto;
+}
+}
 @media screen and (min-width:768px) {
     .customers {
         max-width: 768px;
+        
     }
 
     .customers__permanent {
