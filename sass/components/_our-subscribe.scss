@@ -1,0 +1,116 @@
+/*our subscribe*/
+.fields {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.top-item {
+    padding-bottom: 0;
+}
+.tittle-list {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 0px;
+    color: var(--title-text-color);
+}
+.subscribe {
+    padding: 0px;
+    margin: 0px;
+}
+@media screen and (min-width:320px) {
+    .subscribe__tittle {
+        display: block;
+        max-width: 450px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .subscribe__icon {
+        margin: 0px;
+        width: 100%;
+        background-color: var(--background-button);
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .tittle {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+        color: var(--title-text-color);
+    }
+}
+@media screen and (min-width:768px) {
+    .subscribe {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0;
+        width: 768px;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .subscribe__icon {
+        display: flex;
+    }
+    .subscribe__tittle {
+        display: block;
+        width: 354px;
+        margin: 0;
+        flex-basis: calc(100%/2-30px);
+    }
+    .subscribe__tittle:not(:nth-child(2n)) {
+        margin-right: 30px
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .subscribe {
+        display: flex;
+        flex-wrap: nowrap;
+        width: 1170px;
+    }
+
+    .subscribe__tittle {
+        width: 270px;
+        flex-basis: calc(100%/4);
+    }
+
+    .subscribe__tittle:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    .subscribe__icon {
+        display: flex;
+        width: 65px;
+        height: 70px;
+        margin: 0px;
+        padding: 25px 102px;
+
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .section__work {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .work-list {
+        display: flex;
+        width: 1170px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .work-list__tittle {
+        flex-basis: calc(100%/3);
+    }
+
+    .work-list__tittle:not(:last-child) {
+        margin-right: 30px;
+    }
+}

@@ -1,0 +1,274 @@
+/*Hero*/
+@media screen and (min-width:320px) {
+    .heroes {
+        height: 400px;
+        min-width: 320px;
+        max-width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/Header img.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        margin-bottom: 60px;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .heroes {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url('../../images/Header img@2x.jpg');
+        }
+    }
+
+    .heroes__heading {
+        color: var(--color-button);
+        max-width: 360px;
+        font-family: Roboto;
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.62;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        margin-top: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 118px;
+    }
+}
+
+.button {
+    display: block;
+    color: var(--color-button);
+    background-color: var(--logo-first-color);
+    width: 200px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.875;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    cursor: pointer;
+    margin-bottom: 118px;
+}
+
+.modal-window {
+    z-index: 999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-window.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal-window.is-hidden .modal {
+
+    transform: translate(-50% -50%) scale(1.2);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-button);
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.modal__close-button {
+    position: fixed;
+    top: 8px;
+    right: 8px;
+    padding: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--color-button);
+}
+
+.modal__close-button:hover .modal__icon-close {
+    fill: var(--logo-first-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__heading {
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 12px;
+}
+
+.form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    margin-left: 40px;
+    margin-right: 40px;
+    position: relative;
+}
+
+.form__field {
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.form__icon {
+    position: absolute;
+    top: 35px;
+    left: 15px;
+}
+
+.form__field:focus {
+    padding-left: 40px;
+    outline: none;
+    border-color: var(--logo-first-color);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form__field:focus+.form__icon {
+    fill: var(--logo-first-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-policy {
+    display: block;
+    position: relative;
+    margin-left: 52px;
+    margin-right: 51px;
+}
+
+.form-policy__privat {
+    display: inline-block;
+    max-width: 401px;
+    margin-left: 30px;
+}
+
+.form-policy__privat a {
+    text-decoration: underline;
+    color: var(--logo-first-color);
+}
+
+.form__text-area {
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.form__text-area::-webkit-input-placeholder {
+    color: rgba(117, 117, 117, 0.5);
+    padding: 12px 16px;
+}
+
+.form__text-area:-ms-input-placeholder {
+    color: rgba(117, 117, 117, 0.5);
+    padding: 12px 16px;
+}
+
+.form__text-area::-ms-input-placeholder {
+    color: rgba(117, 117, 117, 0.5);
+    padding: 12px 16px;
+}
+
+.form__text-area::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+    padding: 12px 16px;
+}
+
+.form__text-area:focus {
+    outline: none;
+    border-color: var(--logo-first-color);
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-policy__checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: 1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.form-policy__icon {
+    position: absolute;
+    top: 15px;
+}
+
+.form-policy__icon-hover {
+    position: absolute;
+    width: 0;
+    height: 0;
+}
+
+.form-policy__checkbox:checked~.form-policy__icon-hover {
+    width: 18px;
+    height: 18px;
+    top: 15px;
+}
+
+@media screen and (min-width:768px) {
+    .heroes {
+        max-width: 768px;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/Header img768.jpg");
+
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .heroes {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url('../../images/Header img768@2x.jpg');
+        }
+    }
+
+    .modal {
+        width: 450px;
+        height: 609px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .heroes {
+        max-width: 1200px;
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/head-of-pages (1).jpg");
+        margin-bottom: 0;
+    }
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .heroes {
+            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                url('../../images/head-of-pages@2x.jpg');
+        }
+    }
+
+    .modal {
+        width: 528px;
+        height: 581px;
+    }
+}
