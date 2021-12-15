@@ -175,8 +175,11 @@
 
     .customers__list {
         display: flex;
-    }
 
+    }
+    .customers__list:not(:last-child) {
+    margin-bottom: 30px;
+}
     .customers__permanent {
         display: flex;
         border: 1px solid #eeeeee;
@@ -187,13 +190,7 @@
         height: 92px;
     }
 
-    .customers__list:not(:nth-child(2n)) {
-        margin-right: 30px;
-    }
-
-    .customers__list:nth-child(-n+4) {
-        margin-bottom: 30px;
-    }
+    
 
     .customers__icon {
         fill: var(--color-social-network);
@@ -214,6 +211,13 @@
 .customers{
 margin-left: auto;
 margin-right: auto;
+}
+.customers__list:not(:nth-child(2n)) {
+    margin-right: 30px;
+}
+
+.customers__list:nth-child(-n+4) {
+    margin-bottom: 30px;
 }
 }
 @media screen and (min-width:768px) {
