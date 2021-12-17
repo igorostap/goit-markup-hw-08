@@ -47,6 +47,8 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
 }
 .footer__social-network {
     display: flex;
@@ -119,7 +121,7 @@
 .footer__input {
     width: 90%;
     height: 50px;
-    margin-right: 12px;
+    /*margin-right: 12px;*/
     border: 1px solid rgba(255, 255, 255, 0.3);
     background-color: #2F303A;
     border-radius: 4px;

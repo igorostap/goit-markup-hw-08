@@ -115,8 +115,9 @@
 .portfolio__border {
     max-width: 450px;
     border: 1px solid #EEEEEE;
-    margin-left: auto;
-    margin-right: auto;
+    /*margin-left: auto;
+    margin-right: auto;*/
+    padding-left: 24px;
 }
 
 .portfolio__card {

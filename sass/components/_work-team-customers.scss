@@ -159,6 +159,13 @@
     .team-tittle__list:nth-child(-n+2) {
         margin-bottom: 0;
     }
+    .fields {
+        padding-bottom: 94px;
+        padding-top: 94px;
+    }
+    .top-item{
+        padding-bottom: 0;
+    }
 }
 /*regular customers*/
 @media screen and (min-width:320px) {
@@ -175,16 +182,23 @@
         display: flex;
 
     }
-    .customers__list:not(:last-child) {
-    margin-bottom: 30px;
-}
+    .customers__list:not(:nth-child(2n)) {
+        margin-right: 30px;
+    }
+
+    .customers__list:nth-child(-n+4) {
+        margin-bottom: 30px;
+    }
+    /*.customers__list:not(:last-child) {
+    margin-bottom: 30px;*/
+
     .customers__permanent {
         display: flex;
         border: 1px solid #eeeeee;
         justify-content: center;
         align-items: center;
         border-radius: 4px;
-        width: 210px;
+        width: 120px;
         height: 92px;
     }
 
@@ -205,7 +219,7 @@
         fill: var(--logo-first-color);
     }
 }
-@media screen and (min-width:480px){
+@media screen and (min-width:420px){
 .customers{
 margin-left: auto;
 margin-right: auto;
@@ -213,11 +227,17 @@ margin-right: auto;
 .customers__list:not(:nth-child(2n)) {
     margin-right: 30px;
 }
-
 .customers__list:nth-child(-n+4) {
     margin-bottom: 30px;
 }
+.customers__permanent {
+width: 165px;
 }
+}
+@media screen and (min-width:480px){
+    .customers__permanent {
+        width: 210px;
+}}
 @media screen and (min-width:768px) {
     .customers {
         max-width: 768px;

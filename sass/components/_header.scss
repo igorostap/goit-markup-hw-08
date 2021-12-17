@@ -1,6 +1,5 @@
 .header__container {
     height: 80px;
-
 }
 .header__mobile-nav {
     display: flex;
@@ -19,9 +18,11 @@
     position: absolute;
     top: 20px;
     left: 95%;
-    z-index: 1;
+    z-index: 2;
 }
-
+.header{
+     border-bottom: 1px solid #ECECEC;
+}
 @media screen and (min-width: 768px) {
     .header__button {
         display: none;
@@ -49,6 +50,8 @@
     padding: 0;
     border: none;
     background-color: transparent;
+    z-index: 1;
+     overflow-x: hidden;
 }
 
 @media screen and (max-width: 767px) {
@@ -67,9 +70,12 @@
         width: 100vw;
         height: 200vh;
         padding-top: 48px;
+    }
+    .nav__tittle,
+    .header__address,
+    .header__mobile-network {
         padding-left: 40px;
     }
-
     .header__mobile.is-open {
         display: block;
     }
@@ -125,13 +131,13 @@
         background-color: var(--logo-first-color);
     }
 }
-
+/*
 @media screen and (min-width:320px) and (max-width:480px) {
     .header__mobile {
         padding-left: 0;
     }
 }
-
+*/
 @media screen and (max-width:767px) {
     .nav__list {
         font-family: Roboto;
