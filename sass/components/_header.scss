@@ -1,5 +1,6 @@
 .header__container {
-    height: 80px;
+    max-height: 80px;
+    
 }
 .header__mobile-nav {
     display: flex;
@@ -22,6 +23,7 @@
 }
 .header{
      border-bottom: 1px solid #ECECEC;
+     height: 80px;
 }
 @media screen and (min-width: 768px) {
     .header__button {
@@ -51,7 +53,7 @@
     border: none;
     background-color: transparent;
     z-index: 1;
-     overflow-x: hidden;
+     
 }
 
 @media screen and (max-width: 767px) {
